@@ -51,7 +51,7 @@ class Perceptron:
                 w(t+1): Es el peso para la siguiente iteracion de aprendizaje.
                 w(t): Es el peso para la iteracion actual de aprendizaje.
                 tasaApren: Tasa de aprendizaje.
-                error: (respuesta deseada) - (respuesta del perceptron).
+                error: (resp. deseada) - (resp. perceptron).
                 x: Coordenada actual.
 
         Parametros:
@@ -77,7 +77,7 @@ class Perceptron:
             globalError = 0.0                   # Mantiene el error general que se va obteniendo el aprendizaje.            
 
             for x in data:                      # Recorremos los datos.
-                r = self.respuesta(x)           # Obtenemos la respuesta del perceptron sobre dato.
+                r = self.respuesta(x)           # Obtenemos la respuesta del perceptron sobre el dato.
 
                 if x[2] != r:                           # Si la respuesta no es la deseada.
                     error = x[2] - r                    # El error en la iteracion se actualiza a: respuesta deseada - respuesta obtenida.
@@ -86,7 +86,7 @@ class Perceptron:
             
             iteracion += 1                              # Se contabiliza la iteracion para el criterio de aprendizaje.
 
-            if globalError == 0.0 or iteracion >= 100:      # Criterio de salida: si el error general es 0, o la iteracion de apredndizaje sobre el 100.
+            if globalError == 0.0 or iteracion >= 100:      # Criterio de salida: si el error general es 0, o la iteracion de aprendizaje sobre el 100.
                 print("Iteraciones {}".format(iteracion))   # Se imprime las iteraciones necesarias para aprender.
                 aprendio = True                             # Salida del perceptron.
 
