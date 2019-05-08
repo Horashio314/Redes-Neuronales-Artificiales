@@ -87,7 +87,7 @@ class Perceptron:
 
             iteracion += 1                              # Se contabiliza la iteracion para el criterio de aprendizaje.
             
-            if globalError == 0.0 or iteracion >= 1000:      # Criterio de salida: si el error general es 0, o la iteracion de apredndizaje sobre el 100.
+            if globalError == 0.0 or iteracion >= 1000:     # Criterio de salida: si el error general es 0, o la iteracion de apredndizaje sobre el 1000.
                 aprendio = True                             # Salida del perceptron.
 
 def datosGenerados():
