@@ -60,11 +60,12 @@ class Multicapa:
             self.wh+=np.dot(l1.T, l2_delta)
             self.wi+=np.dot(l0.T, l1_delta)
 
-entrada=np.array([[0,0], [0,1], [1,0], [1,1] ])
-salidas=np.array([ [0], [1],[1],[0] ])
-
-n=Multicapa(entrada)
-print(n.think(entrada))
-print("")
-n.train(entrada, salidas, 1000000)
-print(n.think(entrada))
+if __name__ == "__main__":
+    entrada=np.array([[0,0], [0,1], [1,0], [1,1] ])
+    salidas=np.array([ [0], [1],[1],[0] ])
+    
+    n=Multicapa(entrada)
+    print(n.think(entrada))
+    print("")
+    n.train(entrada, salidas, 1000000)
+    print(n.think(entrada))
