@@ -8,18 +8,18 @@ from pylab import rand, plot, show, norm
 class Perceptron:
     """
     Perceptron Simple
-
-    Parametros:
-        w_: array-1d
-            Pesos actualizados después del ajuste.
-            
-        tasaApren_: float
-            Tasa de aprendizaje.
     """
     def __init__(self, w_= rand(2)*2-1, tasaApren_ = 0.1):
         """ 
         Metodo constructor del preceptron, 
         inicialza los valores por defecto.
+
+        Parametros:
+        w_: array-1d
+            Pesos actualizados después del ajuste.
+            
+        tasaApren_: float
+            Tasa de aprendizaje.
         """
         self.w = w_                         # Vector w, representa los pesos.
         self.tasaApren = tasaApren_         # Tasa de aprendizaje.
