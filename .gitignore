@@ -1,5 +1,5 @@
-# Created by https://www.gitignore.io/api/python,jupyternotebook
-# Edit at https://www.gitignore.io/?templates=python,jupyternotebook
+# Created by https://www.gitignore.io/api/venv,python,jupyternotebook
+# Edit at https://www.gitignore.io/?templates=venv,python,jupyternotebook
 
 ### JupyterNotebook ###
 .ipynb_checkpoints
@@ -133,4 +133,17 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# End of https://www.gitignore.io/api/python,jupyternotebook
+### venv ###
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ll]ocal
+[Ss]cripts
+[Ss]hare
+pyvenv.cfg
+pip-selfcheck.json
+
+# End of https://www.gitignore.io/api/venv,python,jupyternotebook
