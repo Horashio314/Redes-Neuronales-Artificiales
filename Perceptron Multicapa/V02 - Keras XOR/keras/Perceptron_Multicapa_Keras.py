@@ -26,7 +26,8 @@ class Keras:
         self.model = Sequential()
 
         # Datos de entrada y salida
-        self.entrada = [] 
+        self.entrada = []
+        self.salidas = []
 
     def cargarData(self, FICHERO):
         """
@@ -138,7 +139,9 @@ if __name__ == "__main__":
     k.entrenamiento()
 
     # Se evalua el porcetanje de acierto de la red.
+    print("Porcentaje de acierto despues de entrenar:")
     k.evaluador()
+    print("")
 
     # Se obtiene la respuesta de la red luego de entrenarla.
     k.respuesta()
