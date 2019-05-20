@@ -1,0 +1,7 @@
+# 1. Valor de entrada 1
+# 2. Valor de entrada 2
+# 3. Salida correspodiente XOR (0 - 1)
+0,0,0
+0,1,1
+1,0,1
+1,1,0
