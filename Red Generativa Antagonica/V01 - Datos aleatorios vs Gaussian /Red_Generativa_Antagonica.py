@@ -25,7 +25,7 @@ data_stddev = 1.25
 #(nombre, preproceso, d_func_entrada) = ("Datos en bruto", lambda datos: datos, lambda x: x)
 #(nombre, preproceso, d_func_entrada) = ("Datos y variaciones", lambda datos: decorar_diferencias(datos, 2.0), lambda x: x * 2)
 #(nombre, preproceso, d_func_entrada) = ("Datos y diferencias", lambda datos: decorar_diferencias(datos, 1.0), lambda x: x * 2)
-(nombre, preproceso, d_func_entrada) = ("Only 4 moments", lambda datos: get_momentos(datos), lambda x: 4)
+(nombre, preproceso, d_func_entrada) = ("Solo los primeros 4 momentos", lambda datos: get_momentos(datos), lambda x: 4)
 
 print("Data que se usara [%s]" % (nombre))
 
