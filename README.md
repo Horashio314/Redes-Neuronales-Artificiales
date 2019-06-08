@@ -13,3 +13,5 @@ Contenido:
     1. Pasajeros Vuelo Internacional.
 - Red de Creencia Profunda:
     1. Maquina Restringida de Boltzmann
+- Red Generativa Antagonica:
+    1. Datos aleatorios vs Gaussian.
